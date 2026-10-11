@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AirEight — verse air desk</title>
+  <meta name="description" content="Eight bars of sparse verse so the hook has room to lift. Live FluidR3 chairs." />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+<main>
+  <p class="eyebrow">WorkinWithAI · live chairs</p>
+  <h1>AirEight</h1>
+  <p class="lead">Verse air desk. Generators fill every lane in the verse. Session players leave rests and thinner voicings so the hook arrives with contrast, not just volume. Live piano, upright, nylon, kit.</p>
+  <p class="status" id="status">Seating chairs…</p>
+  <div class="controls">
+    <label>BPM <input type="number" id="bpm" min="60" max="180" value="98" /></label>
+    <label>Key <select id="key"><option value="0">A minor</option><option value="2">C major</option><option value="-3">E major</option></select></label>
+  </div>
+  <p class="eyebrow">Groove</p>
+  <div class="row" id="grooves"></div>
+  <p class="eyebrow">Air recipe</p>
+  <div class="row" id="recipes"></div>
+  <p class="eyebrow">Form · verse 1–8 · air is the same bars thinned</p>
+  <div class="bars" id="bars"></div>
+  <h2>Punch list</h2>
+  <pre id="punch"></pre>
+</main>
+<div class="dock">
+  <button id="playA">A · Full</button>
+  <button id="playB">B · Air</button>
+  <button id="export">Export WAV + MIDI</button>
+  <button class="ghost" id="stop">Stop</button>
+  <button class="ghost" id="copy">Copy punch</button>
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
